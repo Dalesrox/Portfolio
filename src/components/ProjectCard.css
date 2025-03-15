@@ -1,116 +1,157 @@
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box; /* Añadido para asegurar que padding y border estén incluidos en el width/height */
+  margin-bottom: 20px; /* Añadido para dar espacio entre las tarjetas en móviles */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 18px;
+  color: #212529;
+}
+
+.project-language {
+  background-color: #e9ecef;
+  color: #495057;
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 500;
+}
+
+.project-description {
+  color: #495057;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.project-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.topic-tag {
+  font-size: 12px;
+  background-color: #e7f5ff;
+  color: #1971c2;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-weight: 500;
+}
+
+.project-stats {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.project-stat {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.project-stat i {
+  margin-right: 5px;
+}
+
+.project-updated {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-link {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #0069d9;
+  color: #0069d9;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0069d9;
+  color: white;
+}
+
+.demo-link {
+  background-color: #0069d9;
+  color: white;
+  border: 1px solid #0069d9;
+}
+
+.demo-link:hover {
+  background-color: #0053aa;
+  border-color: #0053aa;
+}
+
+@media (max-width: 768px) {
   .project-card {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+      padding: 15px; /* Reduce el padding para móviles */
+      margin-bottom: 15px; /* Reduce el margen para móviles */
   }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-  
+
   .project-title {
-    margin: 0;
-    font-size: 18px;
-    color: #212529;
+      font-size: 16px; /* Reduce el tamaño del título para móviles */
   }
-  
-  .project-language {
-    background-color: #e9ecef;
-    color: #495057;
-    font-size: 12px;
-    border-radius: 999px;
-    padding: 2px 10px;
-    font-weight: 500;
-  }
-  
+
   .project-description {
-    color: #495057;
-    margin-bottom: 15px;
-    flex-grow: 1;
+      font-size: 13px; /* Reduce el tamaño de la descripción para móviles */
   }
-  
+
   .project-topics {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 15px;
+      gap: 5px; /* Reduce el espacio entre los topics para móviles */
   }
-  
+
   .topic-tag {
-    font-size: 12px;
-    background-color: #e7f5ff;
-    color: #1971c2;
-    border-radius: 999px;
-    padding: 2px 10px;
-    font-weight: 500;
+      font-size: 11px; /* Reduce el tamaño de los topic tags para móviles */
   }
-  
+
   .project-stats {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #6c757d;
+      font-size: 12px; /* Reduce el tamaño de los stats para móviles */
   }
-  
-  .project-stat {
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .project-stat i {
-    margin-right: 5px;
-  }
-  
+
   .project-updated {
-    margin-left: auto;
-    font-size: 12px;
+      font-size: 10px; /* Reduce el tamaño de la fecha de actualización para móviles */
   }
-  
+
   .project-links {
-    display: flex;
-    gap: 10px;
+      gap: 5px; /* Reduce el espacio entre los links para móviles */
   }
-  
+
   .project-link {
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    border: 1px solid #0069d9;
-    color: #0069d9;
-    background-color: transparent;
-    transition: all 0.3s ease;
+      padding: 6px 10px; /* Reduce el padding de los links para móviles */
+      font-size: 12px; /* Reduce el tamaño de los links para móviles */
   }
-  
-  .project-link:hover {
-    background-color: #0069d9;
-    color: white;
-  }
-  
-  .demo-link {
-    background-color: #0069d9;
-    color: white;
-    border: 1px solid #0069d9;
-  }
-  
-  .demo-link:hover {
-    background-color: #0053aa;
-    border-color: #0053aa;
-  }
-  
+}
