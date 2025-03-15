@@ -11,3 +11,6 @@ For updating the portfolio follow this steps:
 5. Execute "serve" for check funcional build
 6. execute npm run deploy
 7. execute git add and commit
+
+## The portfolio is hosted in
+## https://dalesrox.github.io/portfolio/
