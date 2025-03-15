@@ -1,30 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import './Carousel.css';
 import { Logo } from '../types';
+import grupoExitoLogo from '/assets/images/grupo-exito.png';
+import vivaMallsLogo from '/assets/images/viva-malls.png';
+import globantLogo from '/assets/images/globant-logo.png';
+import magnifAiLogo from '/assets/images/magnifai-logo.png';
 
 const Carousel: React.FC = () => {
   const logos: Logo[] = [
     {
       id: 1,
-      src: '/assets/images/grupo-exito.png',
+      src: grupoExitoLogo,
       alt: 'Grupo Éxito',
       url: 'https://www.grupoexito.com.co/',
     },
     {
       id: 2,
-      src: '/assets/images/viva-malls.png',
+      src: vivaMallsLogo,
       alt: 'Viva Malls',
       url: 'https://ccviva.com/',
     },
     {
       id: 3,
-      src: '/assets/images/globant-logo.png',
+      src: globantLogo,
       alt: 'Globant',
       url: 'https://www.globant.com/',
     },
     {
       id: 4,
-      src: '/assets/images/magnifai-logo.png',
+      src: magnifAiLogo,
       alt: 'MagnifAI',
       url: 'https://magnif.ai/es/',
     },

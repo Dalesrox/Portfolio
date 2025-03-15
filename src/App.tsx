@@ -56,7 +56,7 @@ const App: React.FC = () => {
   }, [githubUsername]);
 
   return (
-    <Router>
+    <Router basename='/portfolio'>
       <div className="app-container">
         <Header />
         <main className="main-content">
