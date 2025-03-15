@@ -104,7 +104,7 @@ const Resume: React.FC = () => {
         </div>
         <div className="resume-actions">
           <button onClick={downloadResume} className="download-button">
-            See my resume
+            My resume in PDF
           </button>
         </div>
       </div>

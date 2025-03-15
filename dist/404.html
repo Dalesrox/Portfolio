@@ -2,22 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
+    <title>Redirecting to Home...</title>
     <script type="text/javascript">
         (function() {
-            var redirect = sessionStorage.redirect;
-            delete sessionStorage.redirect;
-            if (redirect && redirect != location.href) {
-                history.replaceState(null, null, redirect);
-            } else {
-                var pathname = location.pathname;
-                var base = '/portfolio/';
-                if (pathname.startsWith(base)) {
-                    return;
-                }
-                var target = base + pathname.slice(1) + location.search + location.hash;
-                history.replaceState(null, null, target);
+            var pathname = location.pathname;
+            var base = '/portfolio/'; 
+            if (!pathname.startsWith(base)) {
+                return;
             }
+            var target = base; 
+            history.replaceState(null, null, target);
+            location.replace(target); 
         })();
     </script>
 </head>
