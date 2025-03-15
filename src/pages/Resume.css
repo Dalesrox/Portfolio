@@ -1,0 +1,234 @@
+  .resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .resume-header-content h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  
+  .resume-header-content h2 {
+    font-size: 18px;
+    color: #495057;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .resume-summary {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #495057;
+    max-width: 800px;
+  }
+  
+  .download-button {
+    background-color: #0069d9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #0053aa;
+  }
+  
+  .resume-content {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .resume-sidebar {
+    width: 30%;
+  }
+  
+  .resume-main {
+    width: 70%;
+  }
+  
+  .contact-section,
+  .skills-section,
+  .certifications-section,
+  .languages-section,
+  .experience-section,
+  .education-section {
+    margin-bottom: 30px;
+  }
+  
+  .contact-section h3,
+  .skills-section h3,
+  .certifications-section h3,
+  .languages-section h3,
+  .experience-section h3,
+  .education-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-list i {
+    margin-right: 10px;
+    color: #0069d9;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .skill-group {
+    margin-bottom: 20px;
+  }
+  
+  .skill-group h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #495057;
+  }
+  
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .skill-tag {
+    background-color: #e7f5ff;
+    color: #1971c2;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .certification-list,
+  .languages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .certification-list li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .certification-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0069d9;
+    font-weight: bold;
+  }
+  
+  .languages-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .language-level {
+    color: #6c757d;
+    font-size: 14px;
+  }
+  
+  .experience-item,
+  .education-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .experience-item:last-child,
+  .education-item:last-child {
+    border-bottom: none;
+  }
+  
+  .experience-header,
+  .education-header {
+    margin-bottom: 10px;
+  }
+  
+  .experience-header h4,
+  .education-header h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .company-info,
+  .institution-info {
+    display: flex;
+    justify-content: space-between;
+    color: #495057;
+    font-size: 16px;
+  }
+  
+  .experience-period,
+  .education-period {
+    color: #6c757d;
+  }
+  
+  .experience-description {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .experience-description li {
+    margin-bottom: 8px;
+  }
+  
+  .technology-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tech-tag {
+    background-color: #f8f9fa;
+    color: #495057;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+  
+  .education-description {
+    color: #495057;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 992px) {
+    .resume-content {
+      flex-direction: column;
+    }
+  
+    .resume-sidebar,
+    .resume-main {
+      width: 100%;
+    }
+  }
